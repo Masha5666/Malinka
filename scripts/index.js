@@ -11,10 +11,10 @@ const stockActual  = [
     }
 ]
 
-const vestidos = {
-    titulo: "Vestido",
-    precio: 70,
-    cantidad: 50,
+const nuevoArticulo = {
+    titulo: prompt ('Cual es el titulo del nuevo articulo?'),
+    precio: +prompt ('Cual es el precio del nuevo articulo?'),
+    cantidad: parseInt (prompt ('Cual es la cantidad de articulos ingresados?')),
 }
 
 const agregarNuevoArticulo = (articulo, stock) => {
@@ -28,7 +28,7 @@ const mostrarNombresDeArticulos = (stock) => {
 }
 
 
-agregarNuevoArticulo(vestidos, stockActual)
+agregarNuevoArticulo(nuevoArticulo, stockActual)
 console.log(stockActual)
 
 mostrarNombresDeArticulos(stockActual)
